@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Students Session Monitor Panel</title>
+
+<!-----------bootstrap 4----------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-----------font awesome----------------->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-----------Internal CSS----------------->
+<style type="text/css">
+
+/* Search bar */
+.form-control{
+	margin-right: 5px;
+}
+/* minutes ago */
+.mr-1{
+	float: right;
+}
+
+/* table style */
+.sty{ 
+    box-shadow: 0px 0px 16px #333333,
+                     7px 7px 7px rgba(0,0,0,16);
+    border-radius: 20px;
+}
+
+/* table Heading style */
+.thead-light{
+	font-size: 18px;
+}
+/* Icon style */
+.fa{
+  border-radius: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-----------header----------------->
+	<header>
+
+    <!-----------navigation bar----------------->
+	<nav class="navbar navbar-expand-md bg-white navbar-dark">
+      <!------Logo--->
+  <a class="navbar-brand" href="#"><img width="200" src="logo.jpg"> </a>
+          <!------Search and button--->
+  <div class="input-group ml-5">
+     <div class="input-group-prepend">
+      <button class="btn " type="button"><i class="fa fa-search text-primary" style="font-size:24px"></i></button>  
+     </div>
+    <input type="text"  class="form-control " placeholder="Search course, student or instructor">
+
+  </div>
+<button type="button"  class="btn btn-primary w-50 mr-5 ">Join Live Class</button>
+ 
+
+        <!------Icons--->
+  <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-home text-white bg-primary p-1 " style="font-size:24px"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+
+        	<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-tools text-white bg-primary  p-2" viewBox="0 0 16 16">
+  <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+</svg>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-bell text-white bg-primary p-1" style="font-size:24px"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img width="30" src="girl.jpg" alt=""> </a>
+      </li> 
+
+       <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-ellipsis-v text-primary p-1" style="font-size:28px"></i> </a>
+      </li> 
+    </ul>
+  </div>  
+</nav>
+</header >
+<br>
+
+<!-----------------first table---------->
+<section >
+
+	<table cellpadding="10" >
+		<tr>
+      <!------first Left table--->
+      <td class="sty" width="40%">
+         <div class="container ">
+          <h4 class="text-capitalize">Welcome Back!!</h4>
+  
+    <div class="media border p-3">
+    <img src="girl1.jpg"  class="mr-1 mt-1 rounded-circle" style="width:60px;">
+    <div class="media-body">
+      <h4>Sara Denvers </h4>
+      <p>Quisque dignissim tincidunt dolor ac varius. 
+					 Fusce vel felis scelerisque, placerat diam non, 
+					 pretium enim. Etiam quis congue lectus, nec 
+					consequat </p> 
+
+	<div class="container">
+    <div class="btn-group bg-secondary">
+    <button type="button" class="btn mr-2 w-50 text-dark">13 <br> Assetts created</button>
+    <button type="button" class="btn   text-dark">3 <br> Pending Tasks</button>
+    <button type="button" class="btn   text-dark">24 <br> New Comments</button>
+  </div>
+</div>     
+    </div>
+  </div>
+</div>
+</div>
+</td>
+		  
+        <!------first right table--->
+      <td width="60%" class="sty">
+			<div class="bg-primary p-2 ">
+					<h5 class="text-white text-capitalize  ml-5"><i class="fa fa-clock-o mr-2 text-capitalize" style="font-size:24px"></i>YOUR SESSION IS LIVE !!!</h5>
+			</div>
+				<br>
+				<div>
+					<h2 class="text-primary ml-5">EXPONENTS <small>for</small> POWERPUFF GIRLS <br> 
+						<small>on 15 Nov, 2021 at 8 PM</small></h2> <br>
+						<h5 class="ml-5 text-capitalize">RELATED SESSIONS : 7</h5><br>
+					<button type="button" class="btn btn-primary w-25 ml-5 pt-2  text-capitalize ">Join Session Now</button>
+          </div>
+				</td>	
+      </tr>
+		</table> 
+  <br>
+
+<!----------second table------------>
+	<table cellpadding="10">
+		<tr>
+       <!------second Left table--->
+			<td class="sty" width="40%">
+				<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <ul class="navbar-nav ">
+    <li class="nav-item active">
+      <h4 class="mr-2">FEEDBACK RECIEVED</h4>
+    </li>
+    <li class="nav-item pl-5">
+      <a class="nav-link" href="#"><i class="fa fa-search " style="font-size:20px"></i></a>
+    </li>
+    <li class="nav-item pl-3">
+      <a class="nav-link" href="#"><i class="fa fa-edit " style="font-size:20px"></i></a>
+    </li>
+    <li class="nav-item pl-2">
+      <a class="nav-link " href="#"><i class="fa fa-angle-down text-primary" style="font-size:20px"></i></a>
+    </li>
+  </ul>
+</nav>
+<br>
+
+  <!------people list--->
+<div class="media border p-3">
+    <img src="Girl2.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="media-body">
+      <h4>Sophie Kowalki </h4>
+      <p>Combined with a handful of model sentence structures ... </p> 
+      <span class="mr-1 "><strong class="text-primary">34</strong> <br> Minutes <br> Ago</span>
+      <p>For:<span class="text-primary">Thread Builder</span>      
+      	Topic:<span class="text-primary">Communication</span> </p>     
+    </div>
+  </div>
+
+  <div class="media border p-3">
+    <img src="boy1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="media-body">
+      <h4>John Kumoz </h4>
+      <p>Combined with a handful of model sentence structures ... </p> 
+      <span class="mr-1 "><strong class="text-primary">44</strong> <br> Minutes <br> Ago</span>
+      <p>For:<span class="text-primary">Thread Builder</span>      
+      	Topic:<span class="text-primary">Communication</span> </p>     
+    </div>
+  </div>
+
+  <div class="media border p-3">
+    <img src="boy2.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="media-body">
+      <h4>Chris Meinfield </h4>
+      <p>Combined with a handful of model sentence structures ... </p> 
+      <span class="mr-1 "><strong class="text-primary">30</strong> <br> Minutes <br> Ago</span>
+      <p>For:<span class="text-primary">Thread Builder</span>      
+      	Topic:<span class="text-primary">Communication</span> </p>     
+    </div>
+  </div>
+ 
+  <p class="text-primary text-center pt-5 pb-3"><b>SEE ALL FEEDBACK</b></p>
+</td>
+
+        <!------second right table--->
+			<td class="sty" width="60%">
+				<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th><h5 class="text-primary text-capitalize  ml-2"><i class="fa fa-clock-o mr-2 text-capitalize" style="font-size:24px"></i>MY UPCOMING SESSIONS</h5></th>
+        
+        <th><th><h5 class="text-muted text-capitalize mr-5"><i class="fa fa-clock-o mr-2 text-capitalize" style="font-size:24px"></i>MY PREVIOUS SESSIONS</h5></th>
+        </th>
+
+        <th><i class="fa fa-ellipsis-h" style="font-size:24px"></i></th>
+        
+      </tr>
+    </thead>
+
+
+         <!------Schedule table--->
+				 <table class="table">
+    <thead class="thead-light">
+      <tr class="text-center">
+        <th>Date</th>
+        <th>Session Topic & Details</th>
+        <th>Session Time</th>
+        <th>Related Sessions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center">
+        <td ><span ><strong class="text-primary">Tomorrow</strong><br>16<br>Nov</span></td>
+        <td><h6 ><b>Session for 7 Einsteins</b></h6> <p>on 16 November 2021 at 8 PM</p></td>
+        <td><button type="button"  class="btn btn-primary  ">08:00 PM - 1:00 PM</button></td>
+        <td>0</td>
+      </tr>
+      <tr class="text-center">
+        <td ><span ><strong class="text-primary">Wed</strong><br> 17 <br> Nov</span></td>
+        <td><h6 ><b>Session for 3 Blue Men</b></h6> <p>on 17 November 2021 at 8 PM</p></td>
+        <td><button type="button"  class="btn btn-primary    ">08:00 PM - 1:00 PM</button></td>
+        <td>1</td>
+      </tr>
+      <tr class="text-center">
+        <td ><span ><strong class="text-primary">Wed</strong><br> 17 <br> Nov</span></td>
+        <td><h6 ><b>Leadership for 6 Yellow Turtles</b></h6> <p>on 17 November 2021 at 8 PM</p></td>
+        <td><button type="button"  class="btn btn-primary    ">08:00 PM - 1:00 PM</button></td>
+        <td>2</td>
+      </tr>
+
+      <tr class="text-center">
+        <td ><span ><strong class="text-primary">Wed</strong><br> 17<br> Nov</span></td>
+        <td><h6 ><b>Trignometry for 3 Blue Men</b></h6> <p>on 18 November 2021 at 8 PM</p></td>
+        <td><button type="button"  class="btn btn-primary    ">08:00 PM - 1:00 PM</button></td>
+        <td>3</td>
+      </tr>
+      <tr class="text-center">
+        <td ><span ><strong class="text-primary">Wed</strong><br> 17<br> Nov</span></td>
+        <td><h6 ><b>Freedom for 3 Blue Men</b></h6> <p>on 19 November 2021 at 8 PM</p></td>
+        <td><button type="button"  class="btn btn-primary    ">08:00 PM - 1:00 PM</button></td>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr> 
+<br> 
+	<p class="text-primary text-center pt-5 pb-3"><b>SEE ALL MY SESSIONS</b></p>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
